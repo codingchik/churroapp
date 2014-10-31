@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donde Esta Mi Churro</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <script src="scripts/jquery.min.js"></script>
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYYdnqTnM0wi4VhTXQFPhSaPRTBJ2Mi2Q">
+    </script>
+    <script type="text/javascript">
+    function initialize() {
+      var mapOptions = {
+        center: { lat: 34.1844709, lng: -118.131809},
+        zoom: 10,
+        styles: [{"elementType":"labels.icon","stylers":[{"color":"#365779"},{"visibility":"off"}]},{"featureType":"landscape","stylers":[{"color":"#042E58"}]},{"featureType":"road.highway","stylers":[{"color":"#A51A1D"}]},{"featureType":"road.local","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.arterial","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"elementType":"labels.text","stylers":[{"color":"#ffffff"},{"weight":0.1}]},{"featureType":"poi","stylers":[{"color":"#365779"}]},{"featureType":"poi","elementType":"labels.text","stylers":[{"color":"#ffffff"}]},{"featureType":"water"},{"featureType":"transit","stylers":[{"color":"#365779"}]}]
+      };
+      var mapElement = document.getElementById("map-canvas");
+
+      var map = new google.maps.Map(mapElement, mapOptions);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+
+<section class="topsection">
+  <div class="coverimage">
+    <nav>
+      <ul>
+        <li> Account <div id="symbol">▼</div></li>
+        <li> Search  <div id="symbol">▼</div></li>
+        <li> Contact <div id="symbol">▼</div></li>
+      </ul>
+    </nav>
+    
+    <div class="text">
+      <h1 id="title">&iquest;Donde está mi churro?</h1>
+      <p>En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza.  </p>
+    </div>
+      <img src="images/churro.jpg" alt="Image of Churro" height="606" width="1012">
+  </div>
+  <div class="separator">
+  </div>
+</section>
+<h1 id="headline"> Find the Best Churros in Your Area</h1>
+<section class="mapsection">
+  <div id="map-canvas">
+  </div>
+</section>
+
+
+</body>
+
+
+<footer>
+  
+</footer>
+</html>

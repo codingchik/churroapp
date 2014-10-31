@@ -1,0 +1,91 @@
+/*Base (normalize, layout, typography) */
+
+.topsection {
+  margin: auto 0;
+  width: 100%;
+  margin-top: -54px;
+}
+
+.coverimage img { 
+  background: url(../images/churro.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: auto 0;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1012px) {
+  .coverimage {
+    left: 50%;
+  }
+}
+.mapsection {
+  width: 750px;
+  height: 500px;
+  margin: 50px 10px 40px 200px;
+}
+html, body, #map-canvas {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*Overall styling (paragraphs, headings) */
+
+h1, p {
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+}
+#headline {
+  color: black;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+.text {
+  position: absolute;
+  padding-top: 200px;
+  padding-left: 165px;
+  padding-right: 480px;
+  line-height: 2;
+  font-size: 15px;
+}
+#title {
+  font-size: 40px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+
+}
+#symbol {
+  font-size: 6px;
+  display: inline;
+  padding: 0px 5px;
+}
+.separator {
+  height: 45px;
+  background-color: white;
+  position: relative;
+  opacity: 0.4;
+  margin-bottom: -3px;
+  margin-top: -49px;
+
+}
+
+/*Components (alerts, buttons, forms, list, nav, tables */
+nav {
+  padding-top: 70px;
+  position: absolute;
+  padding-left: 150px;
+}
+nav li {
+  display: inline-block;
+  padding-right: 30px;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+  /* Modules (aside, footer, header) */
