@@ -87,5 +87,11 @@ nav li {
   color: white;
   font-family: 'PT Sans', sans-serif;
 }
+#logo img {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 25px;
+  border-radius: 13%;
 
+}
   /* Modules (aside, footer, header) */
